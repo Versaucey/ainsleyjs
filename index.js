@@ -22,7 +22,7 @@ client.on("message", async message => {
         // random sentence by pulling words from a dictionary file, or to just send a random
         // arrangement of characters and integers. Doing something like this may help prevent
         // future bots from detecting that you sent a spam message.
-        message.channel.send("pls beg" + count);
+        message.channel.send("pls beg");
 
         if (count < maxMessages) {
           // If you don't care about whether the messages are deleted or not, like if you created a dedicated server
@@ -63,5 +63,27 @@ client.on("message", async message => {
      });
   }
 });
+
+
+bot.on('message', function(message) {
+        var interval = setInterval (function () {
+            // use the message's channel (TextChannel) to send a new message
+            bot.user.setActivity('Currently spamming Nimas server.')
+            .catch(console.error); // add error handling here
+        }, 1 * 1000); 
+    }
+});    
+
+
+
+
+var http = require("http");
+setInterval(function() {
+    bot.user.setActivity('Currently spamming Nimas server.');
+}, 3000); // every 5 minutes (300000)
+
+//status = 'Demonetising ' + len(self.bot.servers) +  ' servers';
+bot.on('ready', () => { bot.user.setActivity('Currently spamming Nimas server.') })
+
 
 client.login(process.env.B0T_T0KEN);
