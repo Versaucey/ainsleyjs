@@ -1,15 +1,11 @@
 {
-  "name": "discordbot",
+  "name": "ainsley",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
+  "description": "ainsley bot",
+  "main": "app.js",
+  "author": "ainsley",
+  "license": "MIT",
   "dependencies": {
-    "discord.js": "^11.3.2",
-    "mysql": "^2.14.1"
+    "discord.js": "^11.2.1"
   }
 }
