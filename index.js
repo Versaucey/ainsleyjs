@@ -60,9 +60,7 @@ client.on("message", async message => {
       message_array.map(msg => msg.delete().catch(O_o => {}));
      });
   }
-
-
-bot.user.setActivity('Spamming nimas server', 'https://www.twitch.tv/maybenima') })
+});
 
 
 client.login(process.env.B0T_T0KEN);
