@@ -62,7 +62,7 @@ client.on("message", async message => {
   }
 
 
-bot.user.setActivity('Spamming nimas server', { type: 'WATCHING' }) })
+bot.user.setActivity('Spamming nimas server', { type: 'PLAYING' }) })
 
 
 client.login(process.env.B0T_T0KEN);
