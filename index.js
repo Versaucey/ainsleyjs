@@ -13,7 +13,7 @@ client.on("message", async message => {
   if (message.author.id !== client.user.id || message.content.indexOf(client.config.prefix) !== 0) return;
 
   if (command === "spam") {
-    var count = 50; // Number of messages sent (modified by sendSpamMessage)
+    var count = 1; // Number of messages sent (modified by sendSpamMessage)
     var maxMessages = 999999; // Change based on how many messages you want sent
 
     function sendSpamMessage() {
@@ -22,7 +22,7 @@ client.on("message", async message => {
         // random sentence by pulling words from a dictionary file, or to just send a random
         // arrangement of characters and integers. Doing something like this may help prevent
         // future bots from detecting that you sent a spam message.
-        message.channel.send("This is spam message #" + count);
+        message.channel.send("pls beg" + count);
 
         if (count < maxMessages) {
           // If you don't care about whether the messages are deleted or not, like if you created a dedicated server
@@ -34,8 +34,8 @@ client.on("message", async message => {
            * I've also noticed that Discord pauses for about 4 seconds after you send 9
            * messages in rapid succession, and this prevents that. I rarely have any spam
            * messages slip through unless there is a level up from mee6 or Tatsumaki. */
-          let minTime = Math.ceil(2112);  // Rush RP1
-          let maxTime = Math.floor(3779); // Arbitrary integer
+          let minTime = Math.ceil(500);  // Rush RP1
+          let maxTime = Math.floor(1000); // Arbitrary integer
           let timeToWait = Math.floor(Math.random() * (maxTime - minTime)) + minTime;
           setTimeout(sendSpamMessage, timeToWait);
         } else {
