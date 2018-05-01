@@ -2,7 +2,7 @@
   "name": "ainsley",
   "version": "1.0.0",
   "description": "ainsley bot",
-  "main": "app.js",
+  "main": "bot.js",
   "author": "ainsley",
   "license": "MIT",
   "dependencies": {
