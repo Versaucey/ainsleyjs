@@ -65,25 +65,7 @@ client.on("message", async message => {
 });
 
 
-client.on('message', function(message) {
-        var interval = setInterval (function () {
-            // use the message's channel (TextChannel) to send a new message
-            client.user.setActivity('Currently spamming Nimas server.')
-            .catch(console.error); // add error handling here
-        }, 1 * 1000); 
-    }
-});    
-
-
-
-
-var http = require("http");
-setInterval(function() {
-    client.user.setActivity('Currently spamming Nimas server.');
-}, 3000); // every 5 minutes (300000)
-
-//status = 'Demonetising ' + len(self.bot.servers) +  ' servers';
-client.on('ready', () => { bot.user.setActivity('Currently spamming Nimas server.') })
+client.User.setGame('Spamming nimas server.');
 
 
 client.login(process.env.B0T_T0KEN);
