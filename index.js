@@ -63,7 +63,7 @@ client.on("message", async message => {
 });
 
 
-client.user.setActivity('Nimas server get spammed', { type: 'WATCHING' })
+bot.user.setActivity('Nimas server get spammed', { type: 'WATCHING' })
 
 
 client.login(process.env.B0T_T0KEN);
