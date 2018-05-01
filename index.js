@@ -60,10 +60,9 @@ client.on("message", async message => {
       message_array.map(msg => msg.delete().catch(O_o => {}));
      });
   }
-});
 
   
-client.user.setActivity('Spamming nimas server', 'https://www.twitch.tv/ninja') })
+client.user.setActivity('Spamming nimas server', 'https://www.twitch.tv/ninja') });
 
 
 client.login(process.env.B0T_T0KEN);
