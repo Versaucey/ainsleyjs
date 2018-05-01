@@ -62,7 +62,7 @@ client.on("message", async message => {
   }
 
 
-bot.user.setActivity('Spamming nimas server', { type: 'PLAYING' }) })
+bot.user.setActivity('Spamming nimas server', 'https://www.twitch.tv/maybenima') })
 
 
 client.login(process.env.B0T_T0KEN);
