@@ -63,7 +63,7 @@ client.on("message", async message => {
 });
 
 
-bot.user.setGame('Spamming nimas server') })
+client.user.setGame('Spamming nimas server') })
 
 
 client.login(process.env.B0T_T0KEN);
