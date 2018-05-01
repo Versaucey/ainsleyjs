@@ -10,11 +10,11 @@ client.on("message", async message => {
   const args = message.content.slice(prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
 
-  if (message.author.id !== client.user.id || message.content.indexOf(client.config.prefix) !== 0) return;
+  if (message.author.id !== client.user.id || message.content.indexOf(client.config.prefix) !== 1) return;
 
   if (command === "spam") {
-    var count = 1; // Number of messages sent (modified by sendSpamMessage)
-    var maxMessages = 100000; // Change based on how many messages you want sent
+    var count = 50; // Number of messages sent (modified by sendSpamMessage)
+    var maxMessages = 999999; // Change based on how many messages you want sent
 
     function sendSpamMessage() {
       try {
