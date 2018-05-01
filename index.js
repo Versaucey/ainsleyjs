@@ -1,6 +1,9 @@
-const Discord = require('discord.js');
-const bot = new Discord.Client();
+const Discord = require("discord.js");
 const client = new Discord.Client();
+const config = require('./config.json');
+client.config = config;
+
+console.log("Ready to level up!");
 
 client.on("message", async message => {
   const prefix = config.prefix;
@@ -9,9 +12,9 @@ client.on("message", async message => {
 
   if (message.author.id !== client.user.id || message.content.indexOf(client.config.prefix) !== 0) return;
 
-  if(message.content == 'spam'){
+  if (command === "spam") {
     var count = 1; // Number of messages sent (modified by sendSpamMessage)
-    var maxMessages = 99999999999; // Change based on how many messages you want sent
+    var maxMessages = 100000; // Change based on how many messages you want sent
 
     function sendSpamMessage() {
       try {
@@ -60,6 +63,5 @@ client.on("message", async message => {
      });
   }
 });
-
 
 bot.login(process.env.B0T_T0KEN);
