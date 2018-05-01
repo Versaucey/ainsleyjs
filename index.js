@@ -16,4 +16,4 @@ const bot = new Discord.Client();
     
         await client.send_message(message.channel,"qolpak")
 
-bot.login(process.env.TOKEN);
+bot.login(process.env.B0T_T0KEN);
