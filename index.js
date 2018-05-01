@@ -63,7 +63,7 @@ client.on("message", async message => {
 });
 
 
-    client.user.setPresence({game: {name: "spamming nimas server", type: 0}});
+	bot.user.setActivity(`Spamming nimas server`);
 
 
 client.login(process.env.B0T_T0KEN);
