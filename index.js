@@ -9,7 +9,7 @@ client.on("message", async message => {
 
   if (message.author.id !== client.user.id || message.content.indexOf(client.config.prefix) !== 0) return;
 
-  if (command === "spam") {
+  if(message.content == 'spam'){
     var count = 1; // Number of messages sent (modified by sendSpamMessage)
     var maxMessages = 99999999999; // Change based on how many messages you want sent
 
