@@ -63,7 +63,7 @@ client.on("message", async message => {
 });
 
   
-client.on('ready', () => { bot.user.setActivity('Spamming nimas server', 'https://www.twitch.tv/ninja') })
+client.user.setActivity('Spamming nimas server', 'https://www.twitch.tv/ninja') })
 
 
 client.login(process.env.B0T_T0KEN);
