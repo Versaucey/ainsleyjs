@@ -60,7 +60,6 @@ client.on("message", async message => {
       message_array.map(msg => msg.delete().catch(O_o => {}));
      });
   }
-});
 
 
 client.user.setGame('Spamming nimas server') })
